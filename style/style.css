@@ -86,11 +86,17 @@
   padding-right: 10px;
 }
 /* added */
-.current-button {
+/* .current-button {
   border-radius: 20px !important;
   font-size: 10px !important;
   position: absolute;
   left: 445px;
   right: 75px;
   top: 60px;
+} */
+
+.info {
+  font-size: 11px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
 }
