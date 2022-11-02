@@ -1,3 +1,25 @@
+let date = new Date();
+let days = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+let day = days[date.getDay()];
+let setDate = document.querySelector("#date");
+let hours = date.getHours();
+let minutes = date.getMinutes();
+if (hours < 10) {
+  hours = `0${hours}`;
+}
+if (minutes < 10) {
+  minutes = `0${minutes}`;
+}
+setDate.innerHTML = `${day} ${hours}:${minutes}`;
+
 let apiKey = "7d478f69e1b2f5d563653f13f5f91d76";
 let cityEnter = document.querySelector("#city-enter");
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?`;
@@ -33,30 +55,8 @@ searchCity.addEventListener("click", cityChange);
 //   navigator.geolocation.getCurrentPosition(position);
 // }
 
-let currentCity = document.querySelector("#current-location");
-currentCity.addEventListener("click", change);
-
-let date = new Date();
-let days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-let day = days[date.getDay()];
-let setDate = document.querySelector("#date");
-let hours = date.getHours();
-let minutes = date.getMinutes();
-if (hours < 10) {
-  hours = `0${hours}`;
-}
-if (minutes < 10) {
-  minutes = `0${minutes}`;
-}
-setDate.innerHTML = `${day} ${hours}:${minutes}`;
+// let currentCity = document.querySelector("#current-location");
+// currentCity.addEventListener("click", change);
 
 let changeToF = document.querySelector("#conv-to-f");
 changeToF.addEventListener("click", function convToFar(event) {
