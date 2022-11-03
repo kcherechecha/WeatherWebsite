@@ -26,41 +26,42 @@
     />
   </head>
   <body>
-    <div class="containerr">
-      <div class="upper-wrap">
-        <img
-          class="background"
-          src="img/partlycloudy.jpg"
-          alt="partly-cloudy"
-        />
-        <div class="upper">
-          <div class="input-group search-row">
-            <input
-              type="search"
-              id="city-enter"
-              class="form-control search-form search-bar"
-              placeholder="Enter city name..."
-              autocomplete="off"
-            />
-            <span class="input-group-btn search-button">
-              <button
-                type="submit"
-                id="search-city"
-                class="btn btn-primary search-button"
-                style="
-                  --bs-btn-padding-y: 0.375rem;
-                  --bs-btn-padding-x: 0.75rem;
-                  --bs-btn-font-size: 1rem;
-                "
-              >
-                Search
-              </button>
-            </span>
-          </div>
-          <h1 class="city-name" id="name">Kyiv</h1>
-          <!-- added date and links for temperature-->
-          <p class="condition" id="date">Date</p>
-          <!-- <button
+    <div class="container">
+      <div class="wrapper">
+        <div class="upper-wrap">
+          <img
+            class="background"
+            src="img/partlycloudy.jpg"
+            alt="partly-cloudy"
+          />
+          <div class="upper">
+            <div class="input-group search-row">
+              <input
+                type="search"
+                id="city-enter"
+                class="form-control search-form search-bar"
+                placeholder="Enter city name..."
+                autocomplete="off"
+              />
+              <span class="input-group-btn search-button">
+                <button
+                  type="submit"
+                  id="search-city"
+                  class="btn btn-primary search-button"
+                  style="
+                    --bs-btn-padding-y: 0.375rem;
+                    --bs-btn-padding-x: 0.75rem;
+                    --bs-btn-font-size: 1rem;
+                  "
+                >
+                  Search
+                </button>
+              </span>
+            </div>
+            <h1 class="city-name" id="name">Kyiv</h1>
+            <!-- added date and links for temperature-->
+            <p class="condition" id="date">Date</p>
+            <!-- <button
             type="submit"
             id="current-location"
             class="btn btn-primary current-button"
@@ -72,79 +73,80 @@
           >
             Current
           </button> -->
-          <p class="condition">Partly cloudy</p>
-          <p class="condition">
-            <a href="#" id="conv-to-c">°C</a> |
-            <a href="#" id="conv-to-f">°F</a>
-          </p>
-          <h2 class="temperature" id="temperature">15°C</h2>
-        </div>
-      </div>
-      <div class="down">
-        <div class="row forecast">
-          <div class="col-2">
-            <div class="weekday">Mon</div>
-            <div class="icon">
-              <span class="material-symbols-outlined" style="font-size: 40px">
-                rainy
-              </span>
-            </div>
-            <div class="temperatures">13°C</div>
-          </div>
-          <div class="col-2">
-            <div class="weekday">Tue</div>
-            <div class="icon">
-              <span class="material-symbols-outlined" style="font-size: 40px">
-                partly_cloudy_day
-              </span>
-            </div>
-            <div class="temperatures">17°C</div>
-          </div>
-          <div class="col-2">
-            <div class="weekday">Wed</div>
-            <div class="icon">
-              <span class="material-symbols-outlined" style="font-size: 40px">
-                clear_day
-              </span>
-            </div>
-            <div class="temperatures">17°C</div>
-          </div>
-          <div class="col-2">
-            <div class="weekday">Thu</div>
-            <div class="icon">
-              <span class="material-symbols-outlined" style="font-size: 40px">
-                cloudy
-              </span>
-            </div>
-            <div class="temperatures">15°C</div>
-          </div>
-          <div class="col-2">
-            <div class="weekday">Fri</div>
-            <div class="icon">
-              <span class="material-symbols-outlined" style="font-size: 40px">
-                cloudy
-              </span>
-            </div>
-            <div class="temperatures">11°C</div>
-          </div>
-          <div class="col-2">
-            <div class="weekday">Sat</div>
-            <div class="icon">
-              <span class="material-symbols-outlined" style="font-size: 40px">
-                partly_cloudy_day
-              </span>
-            </div>
-            <div class="temperatures">12°C</div>
+            <p class="condition">Partly cloudy</p>
+            <p class="condition">
+              <a href="#" id="conv-to-c">°C</a> |
+              <a href="#" id="conv-to-f">°F</a>
+            </p>
+            <h2 class="temperature" id="temperature">15°C</h2>
           </div>
         </div>
+        <div class="down">
+          <div class="row forecast">
+            <div class="col-2">
+              <div class="weekday">Mon</div>
+              <div class="icon">
+                <span class="material-symbols-outlined" style="font-size: 40px">
+                  rainy
+                </span>
+              </div>
+              <div class="temperatures">13°C</div>
+            </div>
+            <div class="col-2">
+              <div class="weekday">Tue</div>
+              <div class="icon">
+                <span class="material-symbols-outlined" style="font-size: 40px">
+                  partly_cloudy_day
+                </span>
+              </div>
+              <div class="temperatures">17°C</div>
+            </div>
+            <div class="col-2">
+              <div class="weekday">Wed</div>
+              <div class="icon">
+                <span class="material-symbols-outlined" style="font-size: 40px">
+                  clear_day
+                </span>
+              </div>
+              <div class="temperatures">17°C</div>
+            </div>
+            <div class="col-2">
+              <div class="weekday">Thu</div>
+              <div class="icon">
+                <span class="material-symbols-outlined" style="font-size: 40px">
+                  cloudy
+                </span>
+              </div>
+              <div class="temperatures">15°C</div>
+            </div>
+            <div class="col-2">
+              <div class="weekday">Fri</div>
+              <div class="icon">
+                <span class="material-symbols-outlined" style="font-size: 40px">
+                  cloudy
+                </span>
+              </div>
+              <div class="temperatures">11°C</div>
+            </div>
+            <div class="col-2">
+              <div class="weekday">Sat</div>
+              <div class="icon">
+                <span class="material-symbols-outlined" style="font-size: 40px">
+                  partly_cloudy_day
+                </span>
+              </div>
+              <div class="temperatures">12°C</div>
+            </div>
+          </div>
+        </div>
       </div>
+      <p class="info">
+        <a href="https://github.com/kcherechecha/WeatherWebsite" target="_blank"
+          >Open-source code</a
+        >
+        by Kateryna Cherechecha
+      </p>
     </div>
-    <p class="info">
-      <a href="https://github.com/kcherechecha/WeatherWebsite" target="_blank"
-        >Open-source code</a
-      >
-      by Kateryna Cherechecha
-    </p>
     <script src="index.js"></script>
   </body>
 </html>
