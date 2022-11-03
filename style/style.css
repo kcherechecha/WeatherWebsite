@@ -1,11 +1,13 @@
 .container {
   font-family: "Montserrat", sans-serif;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 6px;
-  max-width: 600px;
+  max-width: 625px !important;
   margin: 10px auto;
   width: 80%;
+}
+
+.wrapper {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 6px;
   border-radius: 10px;
-  padding-bottom: 10px;
 }
 
 .upper-wrap {
@@ -43,7 +45,8 @@
   position: fixed;
 }
 
-.search-button {
+.search-button,
+.current-button {
   border-radius: 20px !important;
   font-size: 14px !important;
 }
@@ -64,7 +67,8 @@
   margin: 20px auto;
 }
 .down {
-  margin: 20px auto;
+  margin-top: 25px;
+  padding-bottom: 25px;
 }
 
 .weekday,
@@ -85,18 +89,9 @@
   padding-left: 10px;
   padding-right: 10px;
 }
-/* added */
-/* .current-button {
-  border-radius: 20px !important;
-  font-size: 10px !important;
-  position: absolute;
-  left: 445px;
-  right: 75px;
-  top: 60px;
-} */
 
 .info {
   font-size: 11px;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  margin-top: 10px;
 }
