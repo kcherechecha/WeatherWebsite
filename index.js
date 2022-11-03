@@ -43,20 +43,20 @@ function cityChange(event) {
 let searchCity = document.querySelector("#search-city");
 searchCity.addEventListener("click", cityChange);
 
-// function position(position) {
-//   let lat = position.coords.latitude;
-//   let lon = position.coords.longitude;
-//   let url = `${apiUrl}lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
-//   axios.get(`${url}`).then(display);
-// }
+function position(position) {
+  let lat = position.coords.latitude;
+  let lon = position.coords.longitude;
+  let url = `${apiUrl}lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+  axios.get(`${url}`).then(display);
+}
 
-// function change(event) {
-//   event.preventDefault();
-//   navigator.geolocation.getCurrentPosition(position);
-// }
+function change(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(position);
+}
 
-// let currentCity = document.querySelector("#current-location");
-// currentCity.addEventListener("click", change);
+let currentCity = document.querySelector("#current-location");
+currentCity.addEventListener("click", change);
 
 let changeToF = document.querySelector("#conv-to-f");
 changeToF.addEventListener("click", function convToFar(event) {
